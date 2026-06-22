@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  /* Anchor links land below the sticky header, not under it. */
+  section[id] {
+    scroll-margin-top: 84px;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: #1a8246;
+    color: #ffffff;
+  }
+
+  /* Visible keyboard focus everywhere, never remove the outline silently. */
+  :focus-visible {
+    outline: 2px solid #1a8246;
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  /* Respect reduced-motion: kill smooth scroll + animations + transitions. */
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-page px-5 sm:px-8;
+  }
+
+  /* Small tracked label, fresh-green on light, set in the body sans. */
+  .eyebrow {
+    @apply font-body text-xs font-semibold uppercase tracking-[0.2em] text-cedar-dark;
+  }
+
+  /* Display headings, Sora, set semibold + tight so it reads modern and sharp —
+   * the confident, dependable voice of a sleek lawn-care brand. */
+  .h-display {
+    @apply font-display font-semibold leading-[1.05] tracking-[-0.02em];
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-body text-sm font-semibold transition-colors duration-200 focus-visible:outline-offset-4;
+  }
+
+  /* Primary CTA, fresh grass-green, white text (white-on-cedar ≈ 4.85:1, passes AA). */
+  .btn-primary {
+    @apply btn bg-cedar px-6 py-3.5 text-bone hover:bg-cedar-dark;
+  }
+
+  /* Deep forest-green action, very high contrast. */
+  .btn-dark {
+    @apply btn bg-evergreen px-6 py-3.5 text-bone hover:bg-evergreen-light;
+  }
+
+  /* Outline button for use on dark/photographic backgrounds. */
+  .btn-ghost {
+    @apply btn border border-bone/40 bg-transparent px-6 py-3.5 text-bone hover:border-bone/70 hover:bg-bone/10;
+  }
+
+  /* Outline button on light surfaces. */
+  .btn-outline {
+    @apply btn border border-evergreen/25 bg-transparent px-6 py-3.5 text-evergreen hover:border-evergreen/60 hover:bg-evergreen/5;
+  }
+
+  /* The signature motif: a "mow stripe" — a thin band of alternating fresh-green
+   * cut lines, like the stripes a mower leaves behind. Section divider + accent.
+   * (Class name kept stable for the shared components; the look is lawn, not stone.) */
+  .stone-seam {
+    height: 6px;
+    width: 100%;
+    background-image: repeating-linear-gradient(
+      90deg,
+      #1a8246 0 26px,
+      #3fbe74 26px 52px
+    );
+    opacity: 0.9;
+  }
+
+  /* Faint diagonal mow-stripe wash for light section backgrounds — barely-there
+   * cut lines running across the field. */
+  .ashlar-wash {
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(26, 130, 70, 0.045) 0 24px,
+      transparent 24px 48px
+    );
+  }
+
+  /* Photographic scrim, keeps headline text legible over hero/work imagery. */
+  .photo-scrim {
+    background-image: linear-gradient(
+      180deg,
+      rgba(10, 20, 14, 0.15) 0%,
+      rgba(10, 20, 14, 0.5) 55%,
+      rgba(10, 20, 14, 0.85) 100%
+    );
+  }
+}

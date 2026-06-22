@@ -1,0 +1,62 @@
+import { Check } from "lucide-react";
+import Section from "./Section";
+import { site } from "@/site.config";
+import ImagePlaceholder from "./ImagePlaceholder";
+
+export default function WhyUs() {
+  const { whyUs, images } = site;
+
+  return (
+    <Section id="why-us" tone="paper">
+      <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+        {/* Photo */}
+        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-evergreen/10 shadow-md">
+          <ImagePlaceholder
+            image={images[whyUs.imageKey]}
+            sizes="(min-width: 1024px) 560px, 100vw"
+          />
+          {/* Chiseled stone-seam along the bottom edge, the brand motif. */}
+          <div className="stone-seam absolute inset-x-0 bottom-0" />
+        </div>
+
+        {/* Copy */}
+        <div>
+          <p className="eyebrow mb-4">{whyUs.eyebrow}</p>
+          <h2 className="h-display text-3xl text-evergreen sm:text-[2.6rem]">
+            {whyUs.heading}
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-ink/70">
+            {whyUs.body}
+          </p>
+
+          <ul className="mt-7 space-y-3">
+            {whyUs.bullets.map((bullet) => (
+              <li
+                key={bullet}
+                className="flex items-center gap-3 text-[15px] font-medium text-ink"
+              >
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cedar/15 text-cedar-dark">
+                  <Check className="h-4 w-4" aria-hidden="true" />
+                </span>
+                {bullet}
+              </li>
+            ))}
+          </ul>
+
+          <dl className="mt-9 grid grid-cols-3 gap-4 border-t border-evergreen/10 pt-7">
+            {whyUs.stats.map((stat) => (
+              <div key={stat.label}>
+                <dt className="font-display text-xl font-bold text-evergreen sm:text-2xl">
+                  {stat.value}
+                </dt>
+                <dd className="mt-1 text-xs leading-snug text-ink/55">
+                  {stat.label}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </Section>
+  );
+}
