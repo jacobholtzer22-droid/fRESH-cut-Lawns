@@ -18,13 +18,13 @@
   }
 
   ::selection {
-    background-color: #1a8246;
-    color: #ffffff;
+    background-color: #f5821f;
+    color: #0c3d19;
   }
 
   /* Visible keyboard focus everywhere, never remove the outline silently. */
   :focus-visible {
-    outline: 2px solid #1a8246;
+    outline: 2px solid #b85c00;
     outline-offset: 3px;
     border-radius: 3px;
   }
@@ -64,9 +64,10 @@
     @apply inline-flex items-center justify-center gap-2 rounded-lg font-body text-sm font-semibold transition-colors duration-200 focus-visible:outline-offset-4;
   }
 
-  /* Primary CTA, fresh grass-green, white text (white-on-cedar ≈ 4.85:1, passes AA). */
+  /* Primary CTA, logo orange with deep-green text (dark-on-orange passes AA ~4.8:1;
+   * white-on-orange would not). Hover brightens the orange; text stays readable. */
   .btn-primary {
-    @apply btn bg-cedar px-6 py-3.5 text-bone hover:bg-cedar-dark;
+    @apply btn bg-cedar px-6 py-3.5 text-evergreen hover:bg-cedar-light;
   }
 
   /* Deep forest-green action, very high contrast. */
@@ -92,8 +93,8 @@
     width: 100%;
     background-image: repeating-linear-gradient(
       90deg,
-      #1a8246 0 26px,
-      #3fbe74 26px 52px
+      #0c3d19 0 26px,
+      #2e9e45 26px 52px
     );
     opacity: 0.9;
   }
@@ -103,7 +104,7 @@
   .ashlar-wash {
     background-image: repeating-linear-gradient(
       135deg,
-      rgba(26, 130, 70, 0.045) 0 24px,
+      rgba(12, 61, 25, 0.05) 0 24px,
       transparent 24px 48px
     );
   }

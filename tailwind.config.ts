@@ -5,7 +5,7 @@ import type { Config } from "tailwindcss";
  * A bright, modern, dependable system for a young, sharp lawn-care company.
  * The page lives on a clean, airy off-white (limestone); a deep near-black
  * forest green (evergreen) is the structural anchor — footer, scrolled header,
- * dark feature bands; and a single fresh grass-green (cedar) is the accent +
+ * dark feature bands; and the logo's vivid mower orange (cedar) is the accent +
  * CTA. White cards keep it crisp.
  *
  * NOTE: the token *names* (evergreen / cedar / limestone / bone / ink / stone)
@@ -24,18 +24,18 @@ const config: Config = {
       colors: {
         // Deep near-black forest green — the structural anchor (footer, scrolled
         // header, dark bands, hero frame). Almost-black with a green soul.
-        evergreen: { DEFAULT: "#15281C", dark: "#0F1D15", deep: "#0A140E", light: "#23422F" },
+        evergreen: { DEFAULT: "#0C3D19", dark: "#082C12", deep: "#05200C", light: "#1C5A2E" },
         // Near-black with a faint green undertone — headings + body on light. Not pure black.
         ink: { DEFAULT: "#16201A", soft: "#3A453E" },
         // Fresh, airy off-white — the page base. Clean and bright, faint green tint.
-        limestone: { DEFAULT: "#F4F8F1", dark: "#E7EEE1", deep: "#FBFCFA" },
+        limestone: { DEFAULT: "#F5F6F1", dark: "#E7EBE0", deep: "#FBFCF9" },
         // Crisp white — cards, raised surfaces, and text on dark.
         bone: "#FFFFFF",
         // Neutral sage-grey — borders, captions, muted icons. (Too light for body text.)
         stone: { DEFAULT: "#7E877C", light: "#A8B0A4", dark: "#5F665C" },
-        // Fresh grass-green — the single accent + primary CTA. White text on the
-        // DEFAULT clears WCAG AA (~4.85:1); `light` is the bright pop used on dark.
-        cedar: { DEFAULT: "#1A8246", dark: "#136335", light: "#3FBE74", deep: "#0A3D20" },
+        // The logo's mower orange, the single accent + primary CTA. Dark evergreen text on
+        // the DEFAULT clears WCAG AA (~4.8:1); `light` is the bright pop used on dark.
+        cedar: { DEFAULT: "#F5821F", dark: "#8A4200", light: "#FCA94F", deep: "#5A2D00" },
       },
       fontFamily: {
         display: ["var(--font-display)", "system-ui", "sans-serif"],

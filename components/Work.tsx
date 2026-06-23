@@ -43,7 +43,7 @@ export default function Work({
                 />
                 <div className="photo-scrim absolute inset-0" aria-hidden="true" />
                 <figcaption className="absolute inset-x-0 bottom-0 p-5">
-                  <span className="inline-block rounded-full bg-cedar px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-bone">
+                  <span className="inline-block rounded-full bg-cedar px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-evergreen">
                     {project.category}
                   </span>
                   <p className="mt-2.5 font-display text-lg font-semibold leading-tight text-bone">
