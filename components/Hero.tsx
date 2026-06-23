@@ -12,7 +12,7 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden bg-limestone ashlar-wash"
     >
-      <div className="container-page pt-28 pb-16 sm:pt-32 lg:pt-36 lg:pb-20">
+      <div className="container-page pt-36 pb-16 sm:pt-48 lg:pt-52 lg:pb-20">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           {/* Copy */}
           <div className="animate-fade-up">

@@ -17,7 +17,7 @@ type Props = {
  */
 export default function PageHeader({ eyebrow, title, sub, breadcrumbs }: Props) {
   return (
-    <section className="bg-evergreen pb-12 pt-28 text-bone sm:pb-16 sm:pt-36">
+    <section className="bg-evergreen pb-12 pt-36 text-bone sm:pb-16 sm:pt-48">
       <div className="container-page max-w-3xl">
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-5">
