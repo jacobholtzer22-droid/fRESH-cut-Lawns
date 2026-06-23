@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { site } from "@/site.config";
@@ -46,7 +47,6 @@ export default function Header() {
   // Light text when scrolled (evergreen bar) OR on any page whose top band is dark
   // (every page except the home hero, which is light limestone).
   const light = scrolled || here !== "/";
-  const wordmark = light ? "text-bone" : "text-evergreen";
   const link = light
     ? "text-bone/75 hover:text-bone"
     : "text-ink/70 hover:text-ink";
@@ -70,14 +70,20 @@ export default function Header() {
       }`}
     >
       <div className="container-page flex h-16 items-center justify-between gap-4">
-        {/* Wordmark */}
+        {/* Logo */}
         <Link
           href="/"
-          className={`h-display text-xl sm:text-2xl ${wordmark}`}
+          className="flex items-center"
           aria-label={`${site.business.name}, home`}
         >
-          {site.business.shortName}
-          <span className="text-cedar">.</span>
+          <Image
+            src="/images/logo.png"
+            alt={`${site.business.name} logo`}
+            width={48}
+            height={48}
+            priority
+            className="h-11 w-auto sm:h-12"
+          />
         </Link>
 
         {/* Desktop nav */}

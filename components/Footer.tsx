@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
 import { site } from "@/site.config";
 import { DAY_ORDER, dayLabel, formatDayHours } from "@/lib/format";
@@ -16,9 +17,18 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-4">
           {/* Brand + contact */}
           <div className="lg:col-span-2">
-            <Link href="/" className="h-display text-2xl text-bone">
-              {site.business.name}
-              <span className="text-cedar">.</span>
+            <Link
+              href="/"
+              className="inline-flex"
+              aria-label={`${site.business.name}, home`}
+            >
+              <Image
+                src="/images/logo-badge.png"
+                alt={`${site.business.name} logo`}
+                width={88}
+                height={88}
+                className="h-20 w-auto"
+              />
             </Link>
             <p className="mt-3 max-w-xs text-sm text-bone/60">
               {site.footer.blurb}

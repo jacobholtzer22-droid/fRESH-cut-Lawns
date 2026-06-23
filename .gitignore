@@ -29,6 +29,12 @@ next-env.d.ts
 # vercel
 .vercel
 
-# raw client photo drop (large HEIC originals — optimized JPGs live in /public/images)
+# raw client photo drop + originals (optimized web JPGs live in /public/images)
 *Website Photos/
 /raw-photos/
+/Colin, Fresh Cut Lawn Photos/
+*.HEIC
+*.heic
+*.MOV
+*.mov
+*.mp4

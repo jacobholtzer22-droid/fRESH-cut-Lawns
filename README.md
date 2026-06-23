@@ -65,12 +65,10 @@ npm run build    # production build (verified clean on Next 14.2.35)
 
 ## ⚠️ Open TODOs before launch
 
-- [ ] **Photos are TEMPORARY free stock** (Pexels, free for commercial use). Swap in
-      Colin's real job photos — see `PHOTOS.md` for the exact role → file mapping.
+- [x] **Photos** — ✅ DONE. Now using Colin's real photos: hero, 4 service images, About,
+      and a 45-tile gallery, plus his real logo (header/footer/favicon). See `PHOTOS.md`.
+- [x] **Owner name** — ✅ resolved to **Colin** (client folder renamed "Carson" → "Colin").
 - [ ] **`NEXT_PUBLIC_BUSINESS_SLUG`** — paste the real Neon `Business.slug` for Fresh Cut.
-- [ ] **Owner name** — site copy/config uses **"Colin"** (confirmed by Google reviews +
-      public listings). The client folder is named "Carson" — confirm the correct
-      owner/contact name before printing it anywhere.
 - [ ] **Hours** — `site.config.ts → hours` are reasonable placeholders (Mon to Sat 8 to 6,
       Sun closed). Confirm Colin's real hours; they show in the footer + contact page.
 - [ ] **Reviews** — 3 real Google reviews are imported (Tommy Dills, Lisa Mckee, one

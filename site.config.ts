@@ -147,8 +147,8 @@ export const site = {
       icon: Sprout,
       featured: true,
       image: {
-        src: "/images/lawn-mower.jpg",
-        alt: "A push mower cutting a strip of lush green residential lawn on a sunny day",
+        src: "/images/IMG_6132.jpg",
+        alt: "A Fresh Cut Lawns zero-turn mower cutting crisp green stripes across a residential lawn",
         placeholderLabel: "Lawn maintenance, mowing a green lawn",
       },
       intro:
@@ -168,8 +168,8 @@ export const site = {
         "Fresh mulch, defined bed edges, and tidy shrubs that make the whole property look finished, not just mowed.",
       icon: Shrub,
       image: {
-        src: "/images/landscaping-beds.jpg",
-        alt: "Healthy landscaped flower beds with fresh plants and clean edging beside a home",
+        src: "/images/IMG_3556.jpg",
+        alt: "Freshly installed dark mulch beds with crisp edging along the side of a home, by Fresh Cut Lawns",
         placeholderLabel: "Landscaping, fresh beds & plantings",
       },
       intro:
@@ -188,8 +188,8 @@ export const site = {
         "Spring and fall cleanups that clear the leaves, debris, and overgrowth so your yard starts each season fresh.",
       icon: Leaf,
       image: {
-        src: "/images/fall-leaves.jpg",
-        alt: "Fallen autumn leaves scattered across a green lawn during a fall cleanup",
+        src: "/images/IMG_4398.jpg",
+        alt: "A leaf blower beside a freshly edged mulch bed during a Fresh Cut Lawns property cleanup",
         placeholderLabel: "Seasonal cleanups, fall leaf removal",
       },
       intro:
@@ -208,8 +208,8 @@ export const site = {
         "Driveways, walks, and entries cleared and treated so your property stays safe through every Michiana winter.",
       icon: Snowflake,
       image: {
-        src: "/images/snow-driveway.jpg",
-        alt: "A snow-covered residential driveway in front of a house after a winter storm",
+        src: "/images/Plow2.jpg",
+        alt: "A Fresh Cut Lawns plow truck clearing snow from a residential driveway in winter",
         placeholderLabel: "Snow removal, cleared residential driveway",
       },
       intro:
@@ -235,75 +235,408 @@ export const site = {
     projects: [
       {
         image: {
-          src: "/images/backyard-lawn.jpg",
-          alt: "A freshly mowed green backyard lawn behind a residential home",
-          placeholderLabel: "Project, backyard lawn",
+          src: "/images/IMG_4536.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
         },
-        title: "Backyard Weekly Mowing",
+        title: "Freshly Striped Lawn",
         category: "Lawn Maintenance",
       },
       {
         image: {
-          src: "/images/front-lawn-sky.jpg",
-          alt: "A neatly maintained front lawn in front of a house under a blue sky",
-          placeholderLabel: "Project, front-yard curb appeal",
+          src: "/images/IMG_3605.jpg",
+          alt: "A clean circular mulch ring installed around a tree by Fresh Cut Lawns.",
+          placeholderLabel: "Tree-Ring Mulch",
         },
-        title: "Front-Yard Curb Appeal",
-        category: "Lawn Maintenance",
-      },
-      {
-        image: {
-          src: "/images/lawn-mower.jpg",
-          alt: "A mower cutting clean lines across a green residential lawn",
-          placeholderLabel: "Project, sharp striped mow",
-        },
-        title: "Clean, Sharp Lines",
-        category: "Lawn Maintenance",
-      },
-      {
-        image: {
-          src: "/images/landscaping-beds.jpg",
-          alt: "Fresh landscaped beds with new plants and clean edging beside a home",
-          placeholderLabel: "Project, fresh beds & color",
-        },
-        title: "Fresh Beds & Color",
+        title: "Tree-Ring Mulch",
         category: "Landscaping",
       },
       {
         image: {
-          src: "/images/mowing-action.jpg",
-          alt: "A person mowing a lush green lawn on a bright sunny day",
-          placeholderLabel: "Project, on the job",
+          src: "/images/IMG_6132.jpg",
+          alt: "A Fresh Cut Lawns zero-turn mower cutting crisp green stripes across a lawn.",
+          placeholderLabel: "On the Job",
         },
-        title: "On the Job in Michiana",
-        category: "Lawn Care",
+        title: "On the Job",
+        category: "Lawn Maintenance",
       },
       {
         image: {
-          src: "/images/leaf-pile.jpg",
-          alt: "A pile of raked autumn leaves on a green lawn during a fall cleanup",
-          placeholderLabel: "Project, fall leaf cleanup",
+          src: "/images/IMG_5873.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
         },
-        title: "Fall Leaf Cleanup",
-        category: "Seasonal Cleanups",
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
       },
       {
         image: {
-          src: "/images/modern-home-lawn.jpg",
-          alt: "A modern home with a manicured green lawn and shaped plantings under a blue sky",
-          placeholderLabel: "Project, manicured property",
+          src: "/images/IMG_3556.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
         },
-        title: "Manicured Property",
+        title: "Fresh Mulch Beds",
         category: "Landscaping",
       },
       {
         image: {
-          src: "/images/snow-driveway.jpg",
-          alt: "A residential driveway cleared after snow in front of a house",
-          placeholderLabel: "Project, winter snow removal",
+          src: "/images/IMG_6149.jpg",
+          alt: "A Fresh Cut Lawns zero-turn mower cutting crisp green stripes across a lawn.",
+          placeholderLabel: "On the Job",
         },
-        title: "Winter Snow Removal",
+        title: "On the Job",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/Plow2.jpg",
+          alt: "A Fresh Cut Lawns plow truck clearing snow from a residential driveway in winter.",
+          placeholderLabel: "Snow Plowing",
+        },
+        title: "Snow Plowing",
         category: "Snow Removal",
+      },
+      {
+        image: {
+          src: "/images/Before_and_after_1.jpg",
+          alt: "Before and after of a Fresh Cut Lawns fall leaf cleanup, the lawn cleared and tidy.",
+          placeholderLabel: "Before & After: Leaf Cleanup",
+        },
+        title: "Before & After: Leaf Cleanup",
+        category: "Before & After",
+      },
+      {
+        image: {
+          src: "/images/IMG_5902.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_3599.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
+        },
+        title: "Fresh Mulch Beds",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_6185.jpg",
+          alt: "A Fresh Cut Lawns zero-turn mower cutting crisp green stripes across a lawn.",
+          placeholderLabel: "On the Job",
+        },
+        title: "On the Job",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/Plow_1.jpg",
+          alt: "A Fresh Cut Lawns plow truck clearing snow from a residential driveway in winter.",
+          placeholderLabel: "Snow Plowing",
+        },
+        title: "Snow Plowing",
+        category: "Snow Removal",
+      },
+      {
+        image: {
+          src: "/images/Before_and_after.jpg",
+          alt: "Before and after of a Fresh Cut Lawns landscape bed refresh.",
+          placeholderLabel: "Before & After: Bed Refresh",
+        },
+        title: "Before & After: Bed Refresh",
+        category: "Before & After",
+      },
+      {
+        image: {
+          src: "/images/IMG_5827.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_3625.jpg",
+          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Stone Bed Border",
+        },
+        title: "Stone Bed Border",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/Plow_3.jpg",
+          alt: "A Fresh Cut Lawns plow truck clearing snow from a residential driveway in winter.",
+          placeholderLabel: "Snow Plowing",
+        },
+        title: "Snow Plowing",
+        category: "Snow Removal",
+      },
+      {
+        image: {
+          src: "/images/IMG_5920.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_3628.jpg",
+          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Stone Bed Border",
+        },
+        title: "Stone Bed Border",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_6126.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_3629.jpg",
+          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Stone Bed Border",
+        },
+        title: "Stone Bed Border",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_4131.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_3630.jpg",
+          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Stone Bed Border",
+        },
+        title: "Stone Bed Border",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_4732.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_4400.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
+        },
+        title: "Fresh Mulch Beds",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_5746.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_4402.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
+        },
+        title: "Fresh Mulch Beds",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_5779.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_4404.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
+        },
+        title: "Fresh Mulch Beds",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_5812.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_4544.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
+        },
+        title: "Fresh Mulch Beds",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_5883.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_5729.jpg",
+          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh Mulch Beds",
+        },
+        title: "Fresh Mulch Beds",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_5898.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_4398.jpg",
+          alt: "A leaf blower and freshly edged mulch bed during a Fresh Cut Lawns property cleanup.",
+          placeholderLabel: "Cleanup & Edging",
+        },
+        title: "Cleanup & Edging",
+        category: "Landscaping",
+      },
+      {
+        image: {
+          src: "/images/IMG_5900.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_5904.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_5913.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_5916.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_6084.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_6117.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_6171.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_6179.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_6181.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_6205.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
+      },
+      {
+        image: {
+          src: "/images/IMG_5864.jpg",
+          alt: "A residential lawn freshly mowed with clean, straight mowing stripes by Fresh Cut Lawns.",
+          placeholderLabel: "Freshly Striped Lawn",
+        },
+        title: "Freshly Striped Lawn",
+        category: "Lawn Maintenance",
       },
     ] satisfies Project[],
   },
@@ -430,14 +763,14 @@ export const site = {
   /* --- Photo manifest (non-gallery roles) --- */
   images: {
     hero: {
-      src: "/images/hero.jpg",
-      alt: "A well-kept home with a healthy, freshly cut green lawn under a clear sky",
-      placeholderLabel: "Hero, strongest finished lawn / property",
+      src: "/images/IMG_5864.jpg",
+      alt: "A residential lawn freshly mowed into clean stripes under a blue sky, maintained by Fresh Cut Lawns",
+      placeholderLabel: "Hero, strongest finished lawn",
     },
     crew: {
-      src: "/images/mowing-action.jpg",
-      alt: "A Fresh Cut Lawns crew member mowing a lush green residential lawn",
-      placeholderLabel: "About, mowing a lawn on the job",
+      src: "/images/IMG_6149.jpg",
+      alt: "A Fresh Cut Lawns zero-turn mower cutting stripes across a large green lawn",
+      placeholderLabel: "About, mower on the job",
     },
   } satisfies Record<string, SiteImage>,
 
