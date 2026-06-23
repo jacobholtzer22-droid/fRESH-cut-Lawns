@@ -69,7 +69,7 @@ export default function Header() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="container-page flex h-20 items-center justify-between gap-4 sm:h-24">
+      <div className="container-page flex h-24 items-center justify-between gap-4 sm:h-32">
         {/* Logo */}
         <Link
           href="/"
@@ -79,10 +79,10 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt={`${site.business.name} logo`}
-            width={96}
-            height={96}
+            width={128}
+            height={128}
             priority
-            className="h-16 w-auto sm:h-20"
+            className="h-20 w-auto sm:h-28"
           />
         </Link>
 
