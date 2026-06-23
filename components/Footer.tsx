@@ -25,9 +25,9 @@ export default function Footer() {
               <Image
                 src="/images/logo-badge.png"
                 alt={`${site.business.name} logo`}
-                width={88}
-                height={88}
-                className="h-20 w-auto"
+                width={128}
+                height={128}
+                className="h-28 w-auto"
               />
             </Link>
             <p className="mt-3 max-w-xs text-sm text-bone/60">
