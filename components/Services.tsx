@@ -137,7 +137,7 @@ export default function Services({ compact = false }: { compact?: boolean }) {
       {/* Card grid. Compact shows every service; full shows the non-featured ones. */}
       <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {(compact ? services : rest).map((service) => (
-          <ServiceCard key={service.slug} service={service} photo={!compact} />
+          <ServiceCard key={service.slug} service={service} photo />
         ))}
       </ul>
 
