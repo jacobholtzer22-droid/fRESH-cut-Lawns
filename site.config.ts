@@ -208,9 +208,9 @@ export const site = {
         "Driveways, walks, and entries cleared and treated so your property stays safe through every Michiana winter.",
       icon: Snowflake,
       image: {
-        src: "/images/Plow2.jpg",
-        alt: "A Fresh Cut Lawns plow truck clearing snow from a residential driveway in winter",
-        placeholderLabel: "Snow removal, cleared residential driveway",
+        src: "/images/Plow_3.jpg",
+        alt: "A Fresh Cut Lawns truck with a red plow blade clearing snow from a tree-lined residential driveway in winter",
+        placeholderLabel: "Snow removal, plowing a residential driveway",
       },
       intro:
         "When the snow comes, you shouldn't have to scramble. We keep driveways, walkways, and entries clear and treated so your family and your visitors stay safe through every Michiana winter.",
