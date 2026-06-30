@@ -188,9 +188,9 @@ export const site = {
         "Spring and fall cleanups that clear the leaves, debris, and overgrowth so your yard starts each season fresh.",
       icon: Leaf,
       image: {
-        src: "/images/IMG_4398.jpg",
-        alt: "A leaf blower beside a freshly edged mulch bed during a Fresh Cut Lawns property cleanup",
-        placeholderLabel: "Seasonal cleanups, fall leaf removal",
+        src: "/images/Before_and_after_1.jpg",
+        alt: "Before and after of a Fresh Cut Lawns fall cleanup: a leaf-covered lawn cleared to clean, tidy grass",
+        placeholderLabel: "Seasonal cleanups, before and after leaf removal",
       },
       intro:
         "The change of seasons is when a yard either gets ahead or falls behind. We clear out the leaves, sticks, and debris in spring and fall so your lawn starts healthy and your property looks ready instead of buried.",
