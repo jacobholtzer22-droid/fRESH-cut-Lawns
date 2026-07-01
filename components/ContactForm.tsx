@@ -15,6 +15,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
   const [message, setMessage] = useState("");
+  const [heardAbout, setHeardAbout] = useState("");
   const [smsConsent, setSmsConsent] = useState(false); // real checkbox, never auto-true
   const [status, setStatus] = useState<Status>("idle");
 
@@ -23,10 +24,13 @@ export default function ContactForm() {
     if (status === "submitting") return;
     setStatus("submitting");
 
-    // Fold the address into `message` so the CRM body stays the exact contract.
-    const fullMessage = address.trim()
-      ? `Property address: ${address.trim()}\n\n${message}`
-      : message;
+    // Fold the address + "how did you hear about us" into `message` so the CRM
+    // body stays the exact contract (no new fields sent to the CRM).
+    const lines: string[] = [];
+    if (address.trim()) lines.push(`Property address: ${address.trim()}`);
+    if (message.trim()) lines.push(message.trim());
+    if (heardAbout) lines.push(`How they heard about us: ${heardAbout}`);
+    const fullMessage = lines.join("\n\n");
 
     try {
       const res = await fetch(crm.url, {
@@ -81,7 +85,6 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       className="rounded-2xl border border-evergreen/10 bg-bone p-6 sm:p-8"
-      noValidate
     >
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
@@ -165,6 +168,27 @@ export default function ContactForm() {
           className={`${inputClass} resize-y`}
           placeholder={f.messagePlaceholder}
         />
+      </div>
+
+      <div className="mt-5">
+        <label htmlFor="hearAbout" className={labelClass}>
+          {f.hearAboutLabel}
+        </label>
+        <select
+          id="hearAbout"
+          name="hearAbout"
+          required
+          value={heardAbout}
+          onChange={(e) => setHeardAbout(e.target.value)}
+          className={`${inputClass} cursor-pointer`}
+        >
+          <option value="">{f.hearAboutPlaceholder}</option>
+          {f.hearAboutOptions.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt}
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* TCPA consent, real checkbox, default unchecked */}

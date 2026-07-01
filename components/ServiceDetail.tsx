@@ -8,6 +8,9 @@ type ServiceItem = (typeof site.services)[number];
 /** Body of a /services/<slug> sub-page. */
 export default function ServiceDetail({ service }: { service: ServiceItem }) {
   const others = site.services.filter((s) => s.slug !== service.slug);
+  // Wide before/after side-by-side images need a landscape frame so both
+  // halves stay visible; single photos use the taller portrait crop.
+  const wideImage = service.image.src.includes("before-after");
 
   return (
     <>
@@ -37,7 +40,11 @@ export default function ServiceDetail({ service }: { service: ServiceItem }) {
             </Link>
           </div>
 
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-evergreen/10 shadow-md">
+          <div
+            className={`relative overflow-hidden rounded-2xl border border-evergreen/10 shadow-md ${
+              wideImage ? "aspect-[16/10]" : "aspect-[4/5]"
+            }`}
+          >
             <Image
               src={service.image.src}
               alt={service.image.alt}

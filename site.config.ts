@@ -154,7 +154,8 @@ export const site = {
       intro:
         "A great-looking lawn is the easiest way to make a home stand out, and the hardest to keep up with on your own. We mow on a reliable schedule, edge every walk and bed, and clean up before we leave, so your yard looks cared for week after week without you lifting a finger.",
       bullets: [
-        "Weekly & biweekly mowing",
+        "Weekly mowing",
+        "Commercial & residential properties",
         "Crisp edging along walks, drives & beds",
         "String-trimming around fences, trees & posts",
         "Every clipping blown off and cleaned up",
@@ -197,7 +198,7 @@ export const site = {
       bullets: [
         "Leaf & debris removal",
         "Spring bed & lawn prep",
-        "Fall cleanup before the snow flies",
+        "Fall cleanup before the snow piles up",
         "Hauled away and left clean",
       ],
     },
@@ -362,10 +363,10 @@ export const site = {
       {
         image: {
           src: "/images/IMG_3625.jpg",
-          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
-          placeholderLabel: "Stone Bed Border",
+          alt: "A clean river-rock bed with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh River Rock Bed",
         },
-        title: "Stone Bed Border",
+        title: "Fresh River Rock Bed",
         category: "Landscaping",
       },
       {
@@ -389,10 +390,10 @@ export const site = {
       {
         image: {
           src: "/images/IMG_3628.jpg",
-          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
-          placeholderLabel: "Stone Bed Border",
+          alt: "A clean river-rock bed with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh River Rock Bed",
         },
-        title: "Stone Bed Border",
+        title: "Fresh River Rock Bed",
         category: "Landscaping",
       },
       {
@@ -407,10 +408,10 @@ export const site = {
       {
         image: {
           src: "/images/IMG_3629.jpg",
-          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
-          placeholderLabel: "Stone Bed Border",
+          alt: "A clean river-rock bed with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh River Rock Bed",
         },
-        title: "Stone Bed Border",
+        title: "Fresh River Rock Bed",
         category: "Landscaping",
       },
       {
@@ -425,10 +426,10 @@ export const site = {
       {
         image: {
           src: "/images/IMG_3630.jpg",
-          alt: "A clean decorative-stone bed border with crisp edging along a home by Fresh Cut Lawns.",
-          placeholderLabel: "Stone Bed Border",
+          alt: "A clean river-rock bed with crisp edging along a home by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh River Rock Bed",
         },
-        title: "Stone Bed Border",
+        title: "Fresh River Rock Bed",
         category: "Landscaping",
       },
       {
@@ -515,10 +516,10 @@ export const site = {
       {
         image: {
           src: "/images/IMG_5729.jpg",
-          alt: "Freshly mulched and sharply edged landscape beds installed by Fresh Cut Lawns.",
-          placeholderLabel: "Fresh Mulch Beds",
+          alt: "A fresh river-rock bed around a mailbox with a crisp lawn edge, by Fresh Cut Lawns.",
+          placeholderLabel: "Fresh River Rock Bed",
         },
-        title: "Fresh Mulch Beds",
+        title: "Fresh River Rock Bed",
         category: "Landscaping",
       },
       {
@@ -748,16 +749,15 @@ export const site = {
     ] satisfies Review[],
   },
 
-  /* --- Hours --- TODO: confirm Colin's real hours. These are reasonable
-   * placeholders (Mon to Sat 8 to 6, Sun closed) until verified. */
+  /* --- Hours --- Open 7 AM to 7 PM every day (per Colin). */
   hours: {
-    monday: { open: "08:00", close: "18:00", closed: false },
-    tuesday: { open: "08:00", close: "18:00", closed: false },
-    wednesday: { open: "08:00", close: "18:00", closed: false },
-    thursday: { open: "08:00", close: "18:00", closed: false },
-    friday: { open: "08:00", close: "18:00", closed: false },
-    saturday: { open: "08:00", close: "16:00", closed: false },
-    sunday: { open: null, close: null, closed: true },
+    monday: { open: "07:00", close: "19:00", closed: false },
+    tuesday: { open: "07:00", close: "19:00", closed: false },
+    wednesday: { open: "07:00", close: "19:00", closed: false },
+    thursday: { open: "07:00", close: "19:00", closed: false },
+    friday: { open: "07:00", close: "19:00", closed: false },
+    saturday: { open: "07:00", close: "19:00", closed: false },
+    sunday: { open: "07:00", close: "19:00", closed: false },
   } as Record<string, DayHours>,
 
   /* --- Photo manifest (non-gallery roles) --- */
@@ -779,9 +779,10 @@ export const site = {
     url:
       process.env.NEXT_PUBLIC_CRM_URL ||
       "https://www.alignandacquire.com/api/contact",
-    // TODO: paste Fresh Cut's real Neon Business.slug before launch.
+    // Fresh Cut's real Neon Business.slug (env var overrides if set).
     businessSlug:
-      process.env.NEXT_PUBLIC_BUSINESS_SLUG || "REPLACE_ME_BEFORE_LAUNCH",
+      process.env.NEXT_PUBLIC_BUSINESS_SLUG ||
+      "fresh-cut-lawns-llc-1782864218310",
   },
 
   /* --- Contact / quote copy --- */
@@ -807,6 +808,16 @@ export const site = {
       messageLabel: "What can we help with?",
       messagePlaceholder:
         "Tell us what you need: weekly mowing, a one-time cleanup, mulch and beds, snow removal, or something else.",
+      hearAboutLabel: "How did you hear about us?",
+      hearAboutPlaceholder: "Select one",
+      hearAboutOptions: [
+        "Door hanger",
+        "Google",
+        "Yard signs",
+        "Truck decals",
+        "Nextdoor",
+        "Social media",
+      ],
       submitLabel: "Request my free estimate",
       submittingLabel: "Sending…",
     },
