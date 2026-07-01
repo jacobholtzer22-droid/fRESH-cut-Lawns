@@ -188,8 +188,8 @@ export const site = {
         "Spring and fall cleanups that clear the leaves, debris, and overgrowth so your yard starts each season fresh.",
       icon: Leaf,
       image: {
-        src: "/images/Before_and_after_1.jpg",
-        alt: "Before and after of a Fresh Cut Lawns fall cleanup: a leaf-covered lawn cleared to clean, tidy grass",
+        src: "/images/leaf-before-after.jpg",
+        alt: "Before and after of a Fresh Cut Lawns fall cleanup: a leaf-covered lawn on the left cleared to clean grass on the right",
         placeholderLabel: "Seasonal cleanups, before and after leaf removal",
       },
       intro:
@@ -344,10 +344,10 @@ export const site = {
       {
         image: {
           src: "/images/Before_and_after.jpg",
-          alt: "Before and after of a Fresh Cut Lawns landscape bed refresh.",
-          placeholderLabel: "Before & After: Bed Refresh",
+          alt: "Before and after of a Fresh Cut Lawns yard cleanup, the area cleared and tidy.",
+          placeholderLabel: "Before & After: Leaf Cleanup",
         },
-        title: "Before & After: Bed Refresh",
+        title: "Before & After: Leaf Cleanup",
         category: "Before & After",
       },
       {

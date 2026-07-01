@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import Section from "./Section";
+import Reveal from "./Reveal";
 import { site } from "@/site.config";
 
 export default function ServiceArea() {
@@ -9,7 +10,7 @@ export default function ServiceArea() {
   return (
     <Section id="service-area" tone="stone">
       <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-16">
-        <div>
+        <Reveal>
           <p className="eyebrow mb-4">{serviceArea.eyebrow}</p>
           <h2 className="h-display text-3xl text-evergreen sm:text-4xl">
             {serviceArea.heading.split("\n").map((line, i) => (
@@ -24,12 +25,14 @@ export default function ServiceArea() {
           <Link href={site.cta.href} className="btn-dark mt-7 px-7 py-4 text-base">
             {serviceArea.cta}
           </Link>
-        </div>
+        </Reveal>
 
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {serviceArea.towns.map((town) => (
-            <li
+          {serviceArea.towns.map((town, i) => (
+            <Reveal
+              as="li"
               key={town}
+              delay={(i % 3) * 0.05}
               className="flex items-center gap-2.5 rounded-xl border border-evergreen/10 bg-bone px-4 py-3.5 text-[15px] font-medium text-ink"
             >
               <MapPin
@@ -37,7 +40,7 @@ export default function ServiceArea() {
                 aria-hidden="true"
               />
               {town}
-            </li>
+            </Reveal>
           ))}
         </ul>
       </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Reveal from "./Reveal";
 import { site } from "@/site.config";
 
 /**
@@ -22,17 +23,17 @@ export default function Work({
   return (
     <section id="work" className="bg-evergreen py-20 text-bone sm:py-28">
       <div className="container-page">
-        <div className="max-w-2xl">
+        <Reveal className="max-w-2xl">
           <p className="eyebrow mb-4 text-cedar-light">{work.eyebrow}</p>
           <h2 className="h-display text-3xl text-bone sm:text-[2.6rem]">
             {work.heading}
           </h2>
           <p className="mt-4 text-lg text-bone/70">{work.sub}</p>
-        </div>
+        </Reveal>
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <li key={project.title}>
+          {projects.map((project, i) => (
+            <Reveal as="li" key={project.title} delay={(i % 3) * 0.08}>
               <figure className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-bone/10 bg-evergreen-dark">
                 <Image
                   src={project.image.src}
@@ -51,7 +52,7 @@ export default function Work({
                   </p>
                 </figcaption>
               </figure>
-            </li>
+            </Reveal>
           ))}
         </ul>
 

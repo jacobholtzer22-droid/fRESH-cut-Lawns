@@ -67,6 +67,7 @@ export default function Hero() {
                 image={images[hero.imageKey]}
                 priority
                 sizes="(min-width: 1024px) 540px, 100vw"
+                className="animate-kenburns"
               />
               <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-ink/70 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bone backdrop-blur">
                 {hero.imageBadge}

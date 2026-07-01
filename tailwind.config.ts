@@ -53,10 +53,15 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        kenburns: {
+          "0%": { transform: "scale(1.02)" },
+          "100%": { transform: "scale(1.1)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease-out both",
         "fade-in": "fade-in 0.5s ease-out both",
+        kenburns: "kenburns 20s ease-out both",
       },
     },
   },

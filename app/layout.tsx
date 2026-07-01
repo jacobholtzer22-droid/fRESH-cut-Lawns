@@ -43,8 +43,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html
+      lang="en"
+      className={`${display.variable} ${body.variable}`}
+      suppressHydrationWarning
+    >
       <body className="bg-limestone font-body text-ink antialiased">
+        {/* Enables scroll-reveal only when JS is present, before first paint,
+            so no-JS users still see all content. See components/Reveal.tsx. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('reveal-ready')",
+          }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-cedar focus:px-4 focus:py-2 focus:font-semibold focus:text-evergreen"

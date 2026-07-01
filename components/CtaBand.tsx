@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import Reveal from "./Reveal";
 import { site } from "@/site.config";
 
 /** Closing CTA band used at the bottom of most pages. */
@@ -8,7 +9,7 @@ export default function CtaBand() {
 
   return (
     <section className="bg-evergreen-deep py-20 text-bone sm:py-24">
-      <div className="container-page flex flex-col items-center gap-7 text-center">
+      <Reveal className="container-page flex flex-col items-center gap-7 text-center">
         <div>
           <h2 className="h-display text-3xl text-bone sm:text-4xl">
             {ctaBand.heading}
@@ -26,7 +27,7 @@ export default function CtaBand() {
             {business.phoneDisplay}
           </a>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

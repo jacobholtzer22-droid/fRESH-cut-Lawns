@@ -1,4 +1,5 @@
 import { Star, Quote, ExternalLink, PenLine } from "lucide-react";
+import Reveal from "./Reveal";
 import { site } from "@/site.config";
 
 export default function Reviews() {
@@ -8,7 +9,7 @@ export default function Reviews() {
   return (
     <section id="reviews" className="bg-evergreen-deep py-20 text-bone sm:py-28">
       <div className="container-page">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow mb-4 text-cedar-light">{reviews.eyebrow}</p>
           <h2 className="h-display text-3xl text-bone sm:text-4xl">
             {reviews.heading}
@@ -33,15 +34,17 @@ export default function Reviews() {
             </div>
           )}
           <p className="mt-4 text-base text-bone/70">{reviews.sub}</p>
-        </div>
+        </Reveal>
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
           {reviews.quotes.map((review, i) => {
             const hasQuote = review.quote.trim().length > 0;
             const hasAuthor = review.author.trim().length > 0;
             return (
-              <figure
+              <Reveal
+                as="figure"
                 key={i}
+                delay={(i % 2) * 0.08}
                 className="flex flex-col rounded-2xl border border-bone/10 bg-evergreen/40 p-7"
               >
                 <Quote className="h-7 w-7 text-cedar/80" aria-hidden="true" />
@@ -74,7 +77,7 @@ export default function Reviews() {
                     </span>
                   </div>
                 )}
-              </figure>
+              </Reveal>
             );
           })}
         </div>

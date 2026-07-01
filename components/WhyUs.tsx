@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import Section from "./Section";
+import Reveal from "./Reveal";
 import { site } from "@/site.config";
 import ImagePlaceholder from "./ImagePlaceholder";
 
@@ -10,17 +11,17 @@ export default function WhyUs() {
     <Section id="why-us" tone="paper">
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         {/* Photo */}
-        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-evergreen/10 shadow-md">
+        <Reveal className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-evergreen/10 shadow-md">
           <ImagePlaceholder
             image={images[whyUs.imageKey]}
             sizes="(min-width: 1024px) 560px, 100vw"
           />
-          {/* Chiseled stone-seam along the bottom edge, the brand motif. */}
+          {/* Animated mow-stripe along the bottom edge, the brand motif. */}
           <div className="stone-seam absolute inset-x-0 bottom-0" />
-        </div>
+        </Reveal>
 
         {/* Copy */}
-        <div>
+        <Reveal delay={0.1}>
           <p className="eyebrow mb-4">{whyUs.eyebrow}</p>
           <h2 className="h-display text-3xl text-evergreen sm:text-[2.6rem]">
             {whyUs.heading}
@@ -55,7 +56,7 @@ export default function WhyUs() {
               </div>
             ))}
           </dl>
-        </div>
+        </Reveal>
       </div>
     </Section>
   );
