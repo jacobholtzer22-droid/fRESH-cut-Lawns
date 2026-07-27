@@ -206,7 +206,7 @@ export const site = {
       title: "Snow Removal",
       slug: "snow-removal",
       description:
-        "Driveways, walks, and entries cleared and treated so your property stays safe through every Michiana winter.",
+        "Residential and commercial snow removal across Michiana, from driveways and walkways to parking lot snow removal and salting services, so your property stays safe all winter.",
       icon: Snowflake,
       image: {
         src: "/images/Plow_3.jpg",
@@ -214,12 +214,13 @@ export const site = {
         placeholderLabel: "Snow removal, plowing a residential driveway",
       },
       intro:
-        "When the snow comes, you shouldn't have to scramble. We keep driveways, walkways, and entries clear and treated so your family and your visitors stay safe through every Michiana winter.",
+        "When the snow comes, you shouldn't have to scramble. We handle residential and commercial snow removal across Michiana, plowing driveways, walkways, and parking lots and applying salt to control ice, so your family, your customers, and your visitors stay safe after every storm.",
       bullets: [
+        "Residential & commercial snow removal",
+        "Parking lot snow removal",
         "Driveway & walkway clearing",
-        "Ice control & salting",
+        "Salting & de-icing services",
         "Dependable service after every storm",
-        "Residential properties",
       ],
     },
   ] satisfies Service[],
