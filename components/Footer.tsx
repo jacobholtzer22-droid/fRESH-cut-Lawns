@@ -100,6 +100,14 @@ export default function Footer() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href="#"
+              data-aa-cookie-settings
+              hidden
+              className="transition-colors hover:text-bone"
+            >
+              Cookie settings
+            </a>
             <span className="text-bone/40">{site.footer.credit}</span>
           </div>
         </div>

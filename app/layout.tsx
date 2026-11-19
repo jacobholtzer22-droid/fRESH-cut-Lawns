@@ -48,6 +48,9 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <script defer src="https://www.alignandacquire.com/t/s/fresh-cut-lawns-llc-1782864218310.js"></script>
+      </head>
       <body className="bg-limestone font-body text-ink antialiased">
         {/* Enables scroll-reveal only when JS is present, before first paint,
             so no-JS users still see all content. See components/Reveal.tsx. */}
